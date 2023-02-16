@@ -41,7 +41,7 @@ def partition(array, start, end):
     for index in range(start, end):
         if array[index] <= pivot:
             delimiter = delimiter + 1
-        array[index], array[delimiter] = array[delimiter], array[index]
+            array[index], array[delimiter] = array[delimiter], array[index]
 
     array[delimiter + 1], array[end] = array[end], array[delimiter + 1]
     return delimiter + 1
